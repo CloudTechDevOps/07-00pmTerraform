@@ -6,10 +6,10 @@ sudo yum update -y
 sudo yum install git -y
 
 
-sudo dnf update -y
+sudo yum update -y
 
 # Install Java 21
-sudo dnf install java-21-amazon-corretto-devel -y
+sudo yum install java-21-amazon-corretto-devel -y
 
 # Verify Java
 java -version
@@ -22,7 +22,7 @@ https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
 # Install Jenkins
-sudo dnf install jenkins -y
+sudo yum install jenkins -y
 
 # Enable + start
 sudo systemctl enable jenkins
